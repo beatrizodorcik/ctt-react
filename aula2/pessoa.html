@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Pessoa: Bea </title>
+</head>
+<body>
+  <p id="status"></p>
+  <button onclick="verificarPessoa()"> Verificar </button>
+  <script>
+    function verificarPessoa() {
+      let texto = document.getElementById("status");
+
+      let pessoa = {
+        nome: "Beatriz",
+        idade: 25,
+        status_civil: false
+      }
+
+      if (pessoa.status_civil === false) {
+        texto.innerText = "Solteira (graças a Deus)"
+      } else {
+        texto.innerText = "Casada"
+      }
+    }
+  </script>
+</body>
+</html>
