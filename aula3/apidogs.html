@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs fofíneos</title>
+</head>
+
+<body>
+
+  <h1 id="qtdd"> Quantidade: </h1>
+
+  <button ondblclick="mudarFoto()"> +1 doguinho </button> <br>
+  <img width="500px" src="" id="dog">
+
+  <script>
+    let dog = document.querySelector('#dog')
+    let lista = []
+    let cont = document.querySelector('#qtdd')
+    let qtdd = 0
+
+    function mudarFoto() {
+      fetch('https://random.dog/woof.json')
+        .then(function (resposta) {
+          resposta.json()
+            .then(function (pic) {
+              console.log(pic)
+              dog.src = pic.url
+              lista.push(pic.url)
+              console.log(lista)
+            })
+        })
+        .catch(function (erro) {
+          console.log(erro)
+        })
+
+      qtdd = lista.length + 1
+      cont.innerText = qtdd
+      console.log(cont)
+    }
+
+  </script>
+</body>
+
+</html>
