@@ -20,10 +20,10 @@ function App() {
       <h1>Informações</h1>
       {
         <>
-          <p>{dados?.localidade}</p>
-          <p>{dados?.bairro}</p>
-          <p>{dados?.logradouro}</p>
-          <p>{dados?.uf}</p>
+          <p>Cidade: {dados?.localidade}</p>
+          <p>Bairro: {dados?.bairro}</p>
+          <p>Logradouro: {dados?.logradouro}</p>
+          <p>UF: {dados?.uf}</p>
         </>
       }
 
