@@ -11,14 +11,13 @@ function MostreGif() {
   };
 
   return (
-    <div>
+    <>
       <button onClick={mostrar}>Clique aqui!</button>
       {mostrarMensagem && <img
           src="https://cdn.dicionariopopular.com/imagens/nazareconfusamatematica.gif"
-          alt="Gif Nazare" onClick={escondeGif}
-        />   
+          alt="Gif Nazare" onClick={escondeGif}/>   
       }
-    </div>
+    </>
   )
 }
 
