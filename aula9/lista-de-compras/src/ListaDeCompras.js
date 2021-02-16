@@ -7,7 +7,9 @@ function ListaDeCompras() {
       <Item nome="Feijão" />
       <Item nome="Chocolate" />
       <Item nome="Cenoura" />
-      <Item nome="Tomate" />
+      <Item nome="Banana" />
+      <Item nome="Laranja" />
+      <Item nome="Café" />
     </div>
   );
 }
