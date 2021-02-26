@@ -10,7 +10,7 @@ const Beer = () => {
     useEffect(() => {
         axios.get('https://api.punkapi.com/v2/beers/?per_page=8')
             .then(response => setBeer(response.data));
-    }, [])
+    })
 
     function toggleBeer() {
         setShowBeer(!showBeer);
