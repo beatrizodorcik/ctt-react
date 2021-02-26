@@ -11,17 +11,17 @@ const Foods = () => {
 
     useEffect(() => {
         axios.get('https://www.themealdb.com/api/json/v1/1/categories.php')
-            .then(response => setCategoriesList(response.data))
+            .then(response => setCategoriesList(response.data.categories))
     }, []);
 
     useEffect(() => {
         axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${selectedCategory}`)
-            .then(response => setFood(response.data))
+            .then(response => setFood(response.data.categories))
     }, [selectedCategory]);
 
     useEffect(() => {
         axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${providedFood}`)
-            .then(resposta => setFood(resposta.data))
+            .then(resposta => setFood(resposta.data.categories))
     }, [providedFood]);
 
     return (
