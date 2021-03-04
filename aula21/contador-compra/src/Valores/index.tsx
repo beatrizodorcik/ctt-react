@@ -6,8 +6,8 @@ const Valor = () => {
 
   return (
     <div>
-      <h3>Camisetas fofas</h3>
-      <img src="https://images.pexels.com/photos/2294342/pexels-photo-2294342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width= '300px'/>
+      <h3>Camisetas</h3>
+      <img src="https://images.pexels.com/photos/2294342/pexels-photo-2294342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Camisetas" width= '300px'/>
       <p/>
       <button onClick={() => dispatch({type: 'ADICIONAR'})}>
         Adicionar
